@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <title>HaloCash</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css" />
+  <link rel="stylesheet" href="assets/css/animated.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="shortcut icon" href="assets/images/HaloCash.png" type="image/png" />
+  <style>
+    .map-responsive {
+      position: relative;
+      width: 100%;
+      height: 200px;
+    }
+
+    .map-responsive iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+    }
+
+    .footer-title {
+      color: black;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+
+    .footer-text {
+      color: black;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .footer-link {
+      color: black;
+      text-decoration: none;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+
+    .footer-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .footer-list li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="#" class="logo">
+              <img src="assets/images/logo/icon bulat/1024.png" alt="Chain App Dev" />
+            </a>
+            <ul class="nav">
+              <li class="scroll-to-section">
+                <a href="#top" class="active">Home</a>
+              </li>
+              <li class="scroll-to-section">
+                <a href="#services">Services</a>
+              </li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section">
+                <a href="#process">Process</a>
+              </li>
+              <li class="scroll-to-section">
+                <a href="#contact-us">Contact Us</a>
+              </li>
+              <li>
+                <div class="gradient-button">
+                  <a id="modal_trigger" href="#"><i class="fa fa-download fa-lg custom-outline"
+                      style="display: none;"></i> Download Now</a>
+                </div>
+              </li>
+            </ul>
+            <a class="menu-trigger">
+              <span>Menu</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2 style="font-family: 'AgencyCustom', sans-serif">
+                      HaloCash
+                    </h2>
+                    <p>
+                      <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b>
+                      merupakan platform aggregator yang membantu Kamu untuk memilih dan membandingkan berbagai produk
+                      solusi keuangan digital secara cepat dan praktis
+                      <br />
+                      <a href="#contact">
+                        <img src="assets/images/main/gp.png" class="google-play" alt="Get it on Google Play"
+                          style="height: auto; width: 40%" />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/main/Banner HaloCash_Phone.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Layanan<em> HaloCash</em></h4>
+            <img src="assets/images/heading-line-dec.png" alt="" />
+            <p style="color: black; display: none;">
+              <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b> adalah platform aggregator pinjaman
+              digital yang hadir untuk membantu pengguna membandingkan berbagai produk pinjaman dari penyedia layanan
+              P2P lending resmi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>Platform Perbandingan Produk Keuangan</h4>
+            <p class="short-description">
+              <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b> memudahkan Anda untuk menjelajahi,
+              membandingkan, dan...
+            </p>
+            <p class="full-description" style="display: none">
+              <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b> memudahkan Anda untuk menjelajahi,
+              membandingkan, dan memilih berbagai produk keuangan dari beragam penyedia semuanya dalam satu tampilan
+              yang ringkas dan mudah diakses, sesuai kebutuhan Anda.
+            </p>
+            <div class="text-button">
+              <a href="#" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Informasi Penawaran Produk Terkini</h4>
+            <p class="short-description">
+              Kami menyediakan update terbaru seputar produk pinjaman, termasuk...
+            </p>
+            <p class="full-description" style="display: none">
+              Kami menyediakan update terbaru seputar produk pinjaman, termasuk promo menarik, perubahan suku bunga,
+              serta kebijakan baru dari berbagai platform pinjaman yang dapat memengaruhi keputusan finansial Anda.
+            </p>
+            <div class="text-button">
+              <a href="#" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Proses Pengajuan yang Praktis</h4>
+            <p class="short-description">
+              Proses pengajuan jadi lebih cepat dan efisien dengan
+              <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b>...
+            </p>
+            <p class="full-description" style="display: none">
+              Proses pengajuan jadi lebih cepat dan efisien dengan <b
+                style="font-family: 'AgencyCustom', sans-serif">HaloCash</b>. Platform kami telah terhubung langsung
+              dengan berbagai lembaga keuangan terpercaya, sehingga Anda bisa mengajukan pinjaman langsung dari aplikasi
+              dengan proses yang simpel dan terarah.
+            </p>
+            <div class="text-button">
+              <a href="#" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>Layanan Bantuan Pelanggan Responsif</h4>
+            <p class="short-description">
+              Tim layanan pelanggan <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b> selalu siap membantu
+              Anda...
+            </p>
+            <p class="full-description" style="display: none">
+              Tim layanan pelanggan <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b> selalu siap membantu
+              Anda.
+              Baik itu kendala teknis, pertanyaan seputar pengajuan, atau
+              masalah lainnya — kami hadir untuk memberikan solusi secara
+              cepat, ramah, dan profesional.
+            </p>
+            <div class="text-button">
+              <a href="#" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4>Keunggulan <em>HaloCash</em></h4>
+            <img src="assets/images/heading-line-dec.png" alt="" />
+            <p style="color: black;">
+              <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b> hadir sebagai solusi praktis untuk
+              memudahkan Anda membandingkan dan mengajukan berbagai solusi keuangan digital secara online dengan cepat,
+              aman, dan terpercaya.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#" style="pointer-events: none;">Aman & Terpercaya</a></h4>
+                <p>Perlindungan data optimal</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#" style="pointer-events: none;">Layanan Profesional</a></h4>
+                <p>Siap bantu cepat</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#" style="pointer-events: none;">Mudah Digunakan</a></h4>
+                <p>Tanpa ribet teknis</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#" style="pointer-events: none;">Tanpa Agunan</a></h4>
+                <p>Langsung proses online</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="gradient-button">
+                <a href="#">Download Sekarang</a>
+              </div>
+              <span>*Ajukan Pinjaman Tanpa Ribet</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/main/Keunggulan HaloCash.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Apa Kata <em>Pengguna HaloCash</em></h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Berikut ini adalah pengalaman nyata para pengguna kami yang telah merasakan kemudahan dan kenyamanan menggunakan <b>HaloCash</b>.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Rina Kartika</h4>
+                            <span class="date">30 Juni 2025</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Ibu Rumah Tangga</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Andi Pratama</h4>
+                            <span class="date">28 Juni 2025</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Karyawan Swasta</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star-half"></i>
+                              <span class="rating">4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Siti Nurbaya</h4>
+                            <span class="date">25 Juni 2025</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Usaha Mikro</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Budi Santoso</h4>
+                            <span class="date">22 Juni 2025</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Freelancer</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.2</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Lina Hermawati</h4>
+                            <span class="date">20 Juni 2025</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Mahasiswi</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star-half"></i>
+                              <span class="rating">4.6</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                               <p>“Aplikasi ini sangat membantu! Saya bisa bandingkan banyak pilihan pinjaman tanpa harus unduh banyak aplikasi. Prosesnya cepat dan jelas.”</p>
+                              </div>
+                              <div class="down-content">
+                                <div class="right-content">
+                                  <h4>Rina Kartika</h4>
+                                  <span>Pengguna Setia HaloCash</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Awalnya saya ragu, tapi setelah coba HaloCash, semuanya jadi mudah. Cukup isi data, langsung dapat rekomendasi pinjaman yang sesuai.”</p>
+                              </div>
+                              <div class="down-content">
+                                <div class="right-content">
+                                  <h4>Andi Pratama</h4>
+                                  <span>Pengguna Setia HaloCash</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Saya butuh tambahan modal cepat. Lewat HaloCash saya langsung ketemu opsi pinjaman tanpa jaminan dan langsung cair. Praktis banget.”</p>
+                              </div>
+                              <div class="down-content">
+                                <div class="right-content">
+                                  <h4>Siti Nurbaya</h4>
+                                  <span>Pengguna Setia HaloCash</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <p>“Saya suka karena tampilannya simpel dan informatif. Cocok untuk orang awam yang ingin tahu pilihan pinjaman yang aman dan legal.”</p>
+                              </div>
+                              <div class="down-content">
+                                <div class="right-content">
+                                  <h4>Budi Santoso</h4>
+                                  <span>Pengguna Setia HaloCash</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <p>“Sebagai mahasiswa, saya butuh pinjaman kecil untuk kebutuhan kuliah. HaloCash bantu saya temukan pinjaman yang ringan dan cepat.”</p>
+                              </div>
+                              <div class="down-content">
+                                <div class="right-content">
+                                  <h4>Lina Hermawati</h4>
+                                  <span>Pengguna Setia HaloCash</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="process" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Proses Pengajuan <em>Cepat & Mudah</em></h4>
+            <img src="assets/images/heading-line-dec.png" alt="" />
+            <p style="color: black;">
+              Proses pengajuan dalam hitungan menit. Kami bantu kamu membandingkan berbagai pilihan pinjaman dari mitra
+              terpercaya, tanpa ribet dan <b><u>aman</u></b>.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="pricing-item-regular">
+            <span class="price" style="color: black;">01</span>
+            <h4>Daftar</h4>
+            <div class="icon">
+              <img src="assets/images/main/flow/Daftar.png" alt="" />
+            </div>
+            <p style="color: black; font-weight: bold">
+              Buat akun dengan data diri yang valid untuk mulai menjelajahi
+              pilihan pinjaman.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="pricing-item-regular">
+            <span class="price" style="color: black;">02</span>
+            <h4>Bandingkan</h4>
+            <div class="icon">
+              <img src="assets/images/main/flow/Bandingkan.png" alt="" />
+            </div>
+            <p style="color: black; font-weight: bold">
+              Bandingkan suku bunga, tenor, dan syarat dari berbagai penyedia
+              pinjaman terpercaya.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="pricing-item-regular">
+            <span class="price" style="color: black;">03</span>
+            <h4>Ajukan</h4>
+            <div class="icon">
+              <img src="assets/images/main/flow/Ajukan.png" alt="" />
+            </div>
+            <p style="color: black; font-weight: bold">
+              Pilih produk yang sesuai, lalu ajukan langsung dari aplikasi secara cepat dan aman.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="pricing-item-regular">
+            <span class="price" style="color: black;">04</span>
+            <h4>Cair</h4>
+            <div class="icon">
+              <img src="assets/images/main/flow/Cair.png" alt="" />
+            </div>
+            <p style="color: black; font-weight: bold">
+              Setelah disetujui, dana akan langsung cair ke rekening kamu
+              dalam waktu singkat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4 style="color: black;">Bergabung dengan HaloCash Segera</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-12 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button" style="border-radius: 50px;">
+                    <i class="fa fa-download"></i>
+                    Download Now
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="footer-widget">
+            <h4 class="footer-title">About Our Company</h4>
+            <div class="logo mb-2">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d589.6228723831993!2d106.76232110027776!3d-6.198357801430928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f71886d03ee7%3A0xfa9e999b95667175!2sBusiness%20Park%20Kebon%20Jeruk!5e0!3m2!1sen!2sid!4v1753956098323!5m2!1sen!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border-radius: 20px;"></iframe>
+            </div>
+            <p class="footer-text">
+              <i class="fa fa-location-arrow"></i>&nbsp;<b>Kompleks Business Park Kebon Jeruk, Blok I/21, Desa/Kelurahan Meruya Utara, Kec. Kembangan, Kota Adm.
+                Jakarta Barat, Provinsi DKI Jakarta</b>
+            </p>
+            <p class="footer-text">
+              <i class="fa fa-phone"></i>&nbsp;<b><a class="footer-link" href="tel:6281388885301">+6281388885301</a></b>
+            </p>
+            <p class="footer-text">
+              <i class="fa fa-envelope"></i>&nbsp;<b><a class="footer-link" href="mailto:support@halocash.id">support@halocash.id</a></b>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="footer-widget">
+            <h4 class="footer-title">About Us</h4>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="#">Home</a></li>
+              <li><a class="footer-link" href="#services">Services</a></li>
+              <li><a class="footer-link" href="#about">About</a></li>
+              <li><a class="footer-link" href="#process">Process</a></li>
+              <li><a class="footer-link" href="#contact-us">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="footer-widget">
+            <h4 class="footer-title">About Our Company</h4>
+            <div class="logo mb-2">
+              <img src="assets/images/logo/icon bulat/1024.png" alt="HaloCash Logo" />
+            </div>
+            <p class="footer-text">
+              <b style="font-family: 'AgencyCustom', sans-serif;">HaloCash</b><br>
+              <b>
+                Platform aggregator pinjaman digital milik PT Finansial Integrasi Nusantara yang membantu pengguna
+                membandingkan berbagai produk pinjaman dari penyedia layanan P2P lending resmi.
+              </b>
+            </p>
+            <p class="footer-text">
+              <i class="fa fa-file-pdf"></i>&nbsp;<b><a class="footer-link" href="assets/docs/terms&condition.pdf" target="_blank">Terms & Condition</a></b>
+            </p>
+            <p class="footer-text">
+              <i class="fa fa-file-pdf"></i>&nbsp;<b><a class="footer-link" href="assets/docs/privacy-policy.pdf" target="_blank">Privacy Policy</a></b>
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4">
+          <div class="footer-widget">
+            <h4 class="footer-title">Contact Us</h4>
+            <div class="map-responsive mb-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d589.6228723831993!2d106.76232110027776!3d-6.198357801430928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f71886d03ee7%3A0xfa9e999b95667175!2sBusiness%20Park%20Kebon%20Jeruk!5e0!3m2!1sen!2sid!4v1753956098323!5m2!1sen!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="footer-text">
+              <b>Kompleks Business Park Kebon Jeruk, Blok I/21, Desa/Kelurahan Meruya Utara, Kec. Kembangan, Kota Adm.
+                Jakarta Barat, Provinsi DKI Jakarta</b>
+            </p>
+            <p class="footer-text">
+              <b><a class="footer-link" href="tel:6281388885301">+6281388885301</a></b>
+            </p>
+            <p class="footer-text">
+              <b><a class="footer-link" href="mailto:support@halocash.id">support@halocash.id</a></b>
+            </p>
+          </div>
+        </div> -->
+
+        <div class="col-lg-12">
+          <div class="copyright-text text-center mt-4">
+            <p class="footer-text">
+              <b>Copyright © 2025 HaloCash. All Rights Reserved.</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".read-more");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          const currentItem = button.closest(".service-item");
+          const currentShort =
+            currentItem.querySelector(".short-description");
+          const currentFull = currentItem.querySelector(".full-description");
+
+          const isAlreadyOpen = currentFull.style.display === "block";
+
+          document.querySelectorAll(".service-item").forEach((item) => {
+            item.querySelector(".short-description").style.display = "block";
+            item.querySelector(".full-description").style.display = "none";
+            item.querySelector(".read-more").innerHTML =
+              'Read More <i class="fa fa-arrow-right"></i>';
+          });
+          if (!isAlreadyOpen) {
+            currentShort.style.display = "none";
+            currentFull.style.display = "block";
+            button.innerHTML = 'Show Less <i class="fa fa-arrow-up"></i>';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
