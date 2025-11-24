@@ -94,6 +94,9 @@
               <li class="scroll-to-section">
                 <a href="#services">Services</a>
               </li>
+              <li class="scroll-to-section">
+                <a href="#product">Product</a>
+              </li>
               <li class="scroll-to-section"><a href="#about">About</a></li>
               <li class="scroll-to-section">
                 <a href="#process">Process</a>
@@ -248,6 +251,67 @@
       </div>
     </div>
   </div>
+
+  <div id="product" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Produk <em>HaloCash</em></h4>
+            <img src="assets/images/heading-line-dec.png" alt="" />
+            <p style="color: black;">
+              <b style="font-family: 'AgencyCustom', sans-serif">HaloCash</b> menyediakan
+              dua pilihan produk pinjaman konsumtif. Temukan produk yang paling sesuai untuk Anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center g-4">
+
+        <!-- Produk 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card product-1">
+            <!-- LOGO: klik = tata cara UATAS -->
+            <img src="assets/images/logo-produk-1.png" class="product-logo" alt="Produk 1"
+              onclick="openProductModal('assets/images/detail-produk-1.png')" />
+
+            <!-- BUTTON: klik = syarat UATAS -->
+            <button class="loan-terms-link" onclick="openProductModal('assets/images/syarat-produk-1.png')">
+              Syarat Pinjaman
+            </button>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card product-2">
+            <!-- LOGO: klik = tata cara FINPLUS -->
+            <img src="assets/images/logo-produk-2.png" class="product-logo" alt="Produk 2"
+              onclick="openProductModal('assets/images/detail-produk-2.png')" />
+
+            <!-- BUTTON: klik = syarat FINPLUS -->
+            <button class="loan-terms-link" onclick="openProductModal('assets/images/syarat-produk-2.png')">
+              Syarat Pinjaman
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="productModal" class="product-modal">
+      <div class="product-modal-content">
+        <span class="product-modal-close">&times;</span>
+        <img src="" alt="Detail Produk" id="productModalImage" />
+      </div>
+    </div>
+  </div>
+
+
 
   <div id="about" class="about-us section">
     <div class="container">
@@ -635,17 +699,20 @@
             <div class="logo mb-2">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d589.6228723831993!2d106.76232110027776!3d-6.198357801430928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f71886d03ee7%3A0xfa9e999b95667175!2sBusiness%20Park%20Kebon%20Jeruk!5e0!3m2!1sen!2sid!4v1753956098323!5m2!1sen!2sid"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border-radius: 20px;"></iframe>
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                style="border-radius: 20px;"></iframe>
             </div>
             <p class="footer-text">
-              <i class="fa fa-location-arrow"></i>&nbsp;<b>Kompleks Business Park Kebon Jeruk, Blok I/21, Desa/Kelurahan Meruya Utara, Kec. Kembangan, Kota Adm.
+              <i class="fa fa-location-arrow"></i>&nbsp;<b>Kompleks Business Park Kebon Jeruk, Blok I/21, Desa/Kelurahan
+                Meruya Utara, Kec. Kembangan, Kota Adm.
                 Jakarta Barat, Provinsi DKI Jakarta</b>
             </p>
             <p class="footer-text">
               <i class="fa fa-phone"></i>&nbsp;<b><a class="footer-link" href="tel:6281388885301">+6281388885301</a></b>
             </p>
             <p class="footer-text">
-              <i class="fa fa-envelope"></i>&nbsp;<b><a class="footer-link" href="mailto:support@halocash.id">support@halocash.id</a></b>
+              <i class="fa fa-envelope"></i>&nbsp;<b><a class="footer-link"
+                  href="mailto:support@halocash.id">support@halocash.id</a></b>
             </p>
           </div>
         </div>
@@ -677,10 +744,12 @@
               </b>
             </p>
             <p class="footer-text">
-              <i class="fa fa-file-pdf"></i>&nbsp;<b><a class="footer-link" href="assets/docs/terms&condition.pdf" target="_blank">Terms & Condition</a></b>
+              <i class="fa fa-file-pdf"></i>&nbsp;<b><a class="footer-link" href="assets/docs/terms&condition.pdf"
+                  target="_blank">Terms & Condition</a></b>
             </p>
             <p class="footer-text">
-              <i class="fa fa-file-pdf"></i>&nbsp;<b><a class="footer-link" href="assets/docs/privacy-policy.pdf" target="_blank">Privacy Policy</a></b>
+              <i class="fa fa-file-pdf"></i>&nbsp;<b><a class="footer-link" href="assets/docs/privacy-policy.pdf"
+                  target="_blank">Privacy Policy</a></b>
             </p>
           </div>
         </div>
@@ -754,5 +823,40 @@
       });
     });
   </script>
+
+  <script>
+    function openProductModal(imgSrc) {
+      const modal = document.getElementById('productModal');
+      const modalImg = document.getElementById('productModalImage');
+
+      if (!modal || !modalImg) return;
+
+      modalImg.src = imgSrc;
+      modal.classList.add('show');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('productModal');
+      const modalImg = document.getElementById('productModalImage');
+      const closeBtn = document.querySelector('.product-modal-close');
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+          modal.classList.remove('show');
+          modalImg.src = '';
+        });
+      }
+
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          modal.classList.remove('show');
+          modalImg.src = '';
+        }
+      });
+    });
+  </script>
+
+
 </body>
+
 </html>
