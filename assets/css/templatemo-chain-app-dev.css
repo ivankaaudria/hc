@@ -2440,7 +2440,7 @@ responsive
   border-radius: 16px;
   max-width: none;
   max-height: 90%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 
   display: flex;
   justify-content: center;
@@ -2478,7 +2478,7 @@ responsive
   border-radius: 18px;
   padding: 32px 20px 42px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
   transition: all .25s ease;
   max-width: 460px;
   margin-left: auto;
@@ -2487,17 +2487,15 @@ responsive
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
 .product-1:hover {
-  background: #ffeaed;
-  /* UATAS bg soft pink */
+  background: #ffeaed;   /* UATAS bg soft pink */
 }
 
 .product-2:hover {
-  background: #e5f4ff;
-  /* FINPLUS bg soft blue */
+  background: #e5f4ff;   /* FINPLUS bg soft blue */
 }
 
 .product-logo {
@@ -2528,22 +2526,20 @@ responsive
 .product-1 .loan-terms-link {
   background: #a2383b;
 }
-
 .product-1 .loan-terms-link:hover {
   background: #822a2d;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 /* FINPLUS */
 .product-2 .loan-terms-link {
   background: #3b92ff;
 }
-
 .product-2 .loan-terms-link:hover {
   background: #2a6ec4;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 /* ============ MOBILE ============ */
@@ -2551,9 +2547,19 @@ responsive
   .product-card {
     max-width: 100%;
   }
-
   .loan-terms-link {
     font-size: 14px;
     padding: 7px 22px;
   }
+}
+
+.product-card {
+  position: relative;
+  z-index: 5;       /* card berada di atas bentuk dekorasi */
+}
+
+.loan-terms-link {
+  position: relative;
+  z-index: 10;      /* tombol paling atas, tidak bisa ketutup */
+  pointer-events: auto;
 }
