@@ -79,6 +79,37 @@
     </div>
   </div>
 
+  <!-- DISCLAIMER POPUP -->
+  <div id="disclaimerPopup" class="disclaimer-overlay">
+    <div class="disclaimer-modal">
+      <button class="disclaimer-close" aria-label="Tutup">&times;</button>
+
+      <div class="disclaimer-icon">⚠️</div>
+      <h5 class="disclaimer-title">DISCLAIMER</h5>
+      <div class="disclaimer-divider"></div>
+
+      <div class="disclaimer-body">
+        <p>
+          Kami berperan sebagai penghubung antara Pengguna dan Mitra Lembaga Jasa Keuangan (LJK),
+          tidak terlibat dalam hubungan hukum, transaksi, maupun perjanjian apa pun yang terjadi antara
+          Anda dan Mitra LJK.
+        </p>
+        <p>
+          Segala bentuk risiko, tanggung jawab, dan kewajiban yang timbul dari hubungan, perjanjian, atau
+          transaksi antara Anda dan Mitra LJK sepenuhnya menjadi tanggung jawab masing-masing pihak.
+        </p>
+        <p>
+          Kami tidak bertanggung jawab atas keputusan, tindakan, maupun akibat yang timbul dari
+          interaksi Anda dengan Mitra LJK, termasuk namun tidak terbatas pada risiko kredit, penolakan
+          pengajuan, atau gagal bayar.
+        </p>
+      </div>
+
+      <button class="disclaimer-btn">Saya Mengerti</button>
+    </div>
+  </div>
+  <!-- END DISCLAIMER POPUP -->
+
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
       <div class="row">
@@ -97,7 +128,8 @@
               <li class="scroll-to-section">
                 <a href="#product">Product</a>
               </li>
-              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a>
+              </li>
               <li class="scroll-to-section">
                 <a href="#process">Process</a>
               </li>
@@ -107,7 +139,7 @@
               <li>
                 <div class="gradient-button">
                   <a id="modal_trigger" href="#"><i class="fa fa-download fa-lg custom-outline"
-                      style="display: none;"></i> Download Now</a>
+                      style="display: none;"></i>Download Now</a>
                 </div>
               </li>
             </ul>
@@ -822,7 +854,6 @@
       });
     });
   </script>
-
   <script>
     function openProductModal(imgSrc) {
       const modal = document.getElementById('productModal');
@@ -854,6 +885,30 @@
       });
     });
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const disclaimerOverlay = document.getElementById("disclaimerPopup");
+      const closeBtn = document.querySelector(".disclaimer-close");
+      const okBtn = document.querySelector(".disclaimer-btn");
+
+      function hideDisclaimer() {
+        if (disclaimerOverlay) {
+          disclaimerOverlay.classList.add("hidden");
+        }
+      }
+
+      if (closeBtn) closeBtn.addEventListener("click", hideDisclaimer);
+      if (okBtn) okBtn.addEventListener("click", hideDisclaimer);
+      if (disclaimerOverlay) {
+        disclaimerOverlay.addEventListener("click", function (e) {
+          if (e.target === disclaimerOverlay) {
+            hideDisclaimer();
+          }
+        });
+      }
+    });
+  </script>
+
 
 
 </body>
